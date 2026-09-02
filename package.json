@@ -1,0 +1,21 @@
+{
+  "name": "the-dstrct-site",
+  "version": "1.0.0",
+  "description": "THE DSTRCT & PHAT PINK LACES — Official Landing Platform & Fight Week VIP Hub",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx -y serve . -l 3037",
+    "build": "echo 'Build complete'",
+    "deploy": "vercel --prod"
+  },
+  "keywords": [
+    "the-dstrct",
+    "phat-pink-laces",
+    "manny-pacquiao",
+    "victor-ortiz",
+    "boxing",
+    "las-vegas"
+  ],
+  "author": "THE DSTRCT / Gravity Claw",
+  "license": "UNLICENSED"
+}
