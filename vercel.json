@@ -1,6 +1,5 @@
 {
-  "version": 2,
-  "name": "the-dstrct-site",
+  "outputDirectory": ".",
   "cleanUrls": true,
   "headers": [
     {

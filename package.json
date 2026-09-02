@@ -4,9 +4,7 @@
   "description": "THE DSTRCT & PHAT PINK LACES — Official Landing Platform & Fight Week VIP Hub",
   "main": "index.html",
   "scripts": {
-    "dev": "npx -y serve . -l 3037",
-    "build": "echo 'Build complete'",
-    "deploy": "vercel --prod"
+    "dev": "npx -y serve . -l 3037"
   },
   "keywords": [
     "the-dstrct",
