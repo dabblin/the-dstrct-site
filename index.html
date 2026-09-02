@@ -75,19 +75,21 @@
   <div class="vintage-vignette" aria-hidden="true"></div>
 
   <!-- Navigation Bar -->
-  <header class="fixed top-0 left-0 right-0 z-40 backdrop-blur-md bg-dark/90 border-b border-gold/20 transition-all duration-300" id="mainHeader">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+  <header class="fixed top-0 left-0 right-0 z-40 backdrop-blur-md bg-dark/95 border-b border-gold/20 transition-all duration-300 shadow-lg" id="mainHeader">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-24 flex items-center justify-between">
       
-      <!-- Brand Logo Combo (Focus: PHAT PINK LACES) -->
-      <a href="#top" class="flex items-center gap-3.5 group focus:outline-none" aria-label="Phat Pink Laces Home">
-        <div class="h-12 w-12 rounded-full border border-gold/40 p-1 bg-black/80 shadow-gold-sm flex items-center justify-center transition-transform group-hover:scale-105">
-          <img src="assets/phat_pink_laces_logo.png" alt="Phat Pink Laces Emblem" class="h-full w-full object-contain rounded-full">
+      <!-- Brand Logo Combo (Prominent Boxing Gloves Emblem & Typographic Hierarchy) -->
+      <a href="#top" class="flex items-center gap-4 group focus:outline-none" aria-label="Phat Pink Laces Home">
+        <div class="relative h-16 w-16 sm:h-20 sm:w-20 rounded-full p-1 bg-gradient-to-br from-charcoal via-black to-charcoal border-2 border-gold/60 shadow-gold-sm flex items-center justify-center transition-all duration-300 group-hover:scale-105 group-hover:border-pink group-hover:shadow-pink-sm ring-2 ring-gold/30 group-hover:ring-pink/50">
+          <img src="assets/phat_pink_laces_logo.png" alt="Phat Pink Laces Boxing Gloves Emblem" class="h-full w-full object-contain rounded-full filter drop-shadow-md">
+          <div class="absolute -inset-1 rounded-full bg-pink/15 opacity-0 group-hover:opacity-100 blur-sm transition-opacity duration-300 -z-10"></div>
         </div>
         <div class="flex flex-col">
-          <span class="font-display font-black text-xl sm:text-2xl tracking-wide uppercase leading-none text-white">
+          <span class="font-display font-black text-2xl sm:text-3xl tracking-wide uppercase leading-none text-white transition-colors group-hover:text-gold-bright">
             PHAT <span class="text-pink">PINK</span> LACES
           </span>
-          <span class="font-mono text-[10px] tracking-widest uppercase text-gray-400 mt-0.5">
+          <span class="font-mono text-[10px] sm:text-xs tracking-widest uppercase text-gold mt-1 font-semibold flex items-center gap-1.5">
+            <span class="w-1.5 h-1.5 rounded-full bg-pink"></span>
             Championship Boxing &bull; Las Vegas
           </span>
         </div>
@@ -120,7 +122,7 @@
   <main id="mainContent">
 
     <!-- TOP HERO SECTION WITH VIP EMAIL CAPTURE AT THE TOP -->
-    <section id="vip-access" class="relative pt-28 pb-16 px-4 overflow-hidden bg-gradient-to-b from-dark via-charcoal to-dark">
+    <section id="vip-access" class="relative pt-32 sm:pt-36 pb-16 px-4 overflow-hidden bg-gradient-to-b from-dark via-charcoal to-dark">
       <!-- Ambient Glows -->
       <div class="ambient-glow top-10 left-1/2 -translate-x-1/2"></div>
       <div class="ambient-pink-glow top-40 right-10 opacity-30"></div>
@@ -523,10 +525,12 @@
   <footer class="py-12 px-4 border-t border-gold/20 bg-black text-gray-400 font-sans text-xs">
     <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
       
-      <div class="flex items-center gap-3">
-        <img src="assets/phat_pink_laces_logo.png" alt="Phat Pink Laces Logo" class="h-8 w-8 rounded-full border border-gold/40">
+      <div class="flex items-center gap-3.5">
+        <div class="h-10 w-10 sm:h-12 sm:w-12 rounded-full border border-gold/50 p-0.5 bg-black shadow-gold-sm flex items-center justify-center">
+          <img src="assets/phat_pink_laces_logo.png" alt="Phat Pink Laces Logo" class="h-full w-full object-contain rounded-full">
+        </div>
         <div>
-          <p class="text-white font-display font-bold tracking-wider">PHAT <span class="text-pink">PINK</span> LACES</p>
+          <p class="text-white font-display font-bold tracking-wider text-base">PHAT <span class="text-pink">PINK</span> LACES</p>
           <p class="text-[11px] text-gray-500">&copy; 2026-2027 All Rights Reserved.</p>
         </div>
       </div>
