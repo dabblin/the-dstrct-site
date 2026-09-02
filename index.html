@@ -79,7 +79,7 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
       
       <!-- Brand Logo Combo (Focus: PHAT PINK LACES) -->
-      <a href="#fight-card" class="flex items-center gap-3.5 group focus:outline-none" aria-label="Phat Pink Laces Home">
+      <a href="#top" class="flex items-center gap-3.5 group focus:outline-none" aria-label="Phat Pink Laces Home">
         <div class="h-12 w-12 rounded-full border border-gold/40 p-1 bg-black/80 shadow-gold-sm flex items-center justify-center transition-transform group-hover:scale-105">
           <img src="assets/phat_pink_laces_logo.png" alt="Phat Pink Laces Emblem" class="h-full w-full object-contain rounded-full">
         </div>
@@ -95,7 +95,8 @@
 
       <!-- Desktop Navigation Links -->
       <nav class="hidden md:flex items-center gap-8 font-mono text-xs uppercase tracking-wider text-gray-300">
-        <a href="#fight-card" class="nav-link hover:text-gold transition-colors">Championship Fight</a>
+        <a href="#vip-access" class="nav-link hover:text-gold transition-colors">VIP Access</a>
+        <a href="#fight-card" class="nav-link hover:text-gold transition-colors">Fight Card</a>
         <a href="#partners" class="nav-link hover:text-gold transition-colors">Strategic Partners</a>
         <a href="#heritage" class="nav-link hover:text-gold transition-colors">Jack Johnson Legacy</a>
         <a href="#leadership" class="nav-link hover:text-gold transition-colors">Leadership</a>
@@ -123,16 +124,16 @@
   <!-- MAIN SCROLLYTELLING CONTENT -->
   <main id="mainContent">
 
-    <!-- HERO SECTION: CHAMPIONSHIP FIGHT AT THE TOP -->
-    <section id="fight-card" class="relative min-h-screen flex items-center justify-center pt-28 pb-20 px-4 overflow-hidden">
+    <!-- TOP HERO SECTION WITH VIP EMAIL CAPTURE AT THE TOP -->
+    <section id="vip-access" class="relative pt-28 pb-16 px-4 overflow-hidden bg-gradient-to-b from-dark via-charcoal to-dark">
       <!-- Ambient Glows -->
       <div class="ambient-glow top-10 left-1/2 -translate-x-1/2"></div>
-      <div class="ambient-pink-glow bottom-10 right-10 opacity-40"></div>
+      <div class="ambient-pink-glow top-40 right-10 opacity-30"></div>
 
-      <div class="max-w-6xl mx-auto w-full relative z-10 flex flex-col items-center">
+      <div class="max-w-4xl mx-auto w-full relative z-10 flex flex-col items-center">
         
         <!-- Top Presenter Header -->
-        <div class="text-center mb-6">
+        <div class="text-center mb-8">
           <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-gold/10 border border-gold/30 text-gold font-mono text-xs uppercase tracking-widest mb-3 shadow-gold-sm">
             <span class="w-2 h-2 rounded-full bg-gold animate-ping"></span>
             <span>Sanctioned Championship Event</span>
@@ -145,8 +146,85 @@
           </p>
         </div>
 
+        <!-- VIP ACCESS EMAIL CAPTURE CARD (PROMINENTLY AT TOP) -->
+        <div class="w-full vip-container scrolly-reveal rounded-2xl border border-gold/40 bg-gradient-to-b from-charcoal/95 to-black p-6 sm:p-10 shadow-2xl backdrop-blur-md">
+          
+          <div class="text-center mb-8">
+            <span class="font-mono text-xs uppercase tracking-widest text-pink block mb-2">Direct-To-Consumer VIP Hub</span>
+            <h2 class="font-display font-bold text-3xl sm:text-4xl uppercase tracking-tight text-white mb-2">
+              CLAIM YOUR <span class="text-gold">RINGSIDE</span> ACCESS
+            </h2>
+            <p class="text-gray-300 text-sm sm:text-base font-light">
+              Join the priority list for Fight-Week ticket alerts, VIP credentials, and official event announcements.
+            </p>
+          </div>
+
+          <!-- Email Collection Form -->
+          <form id="emailCaptureForm" class="space-y-5">
+            
+            <!-- Category Selector -->
+            <div>
+              <label class="block font-mono text-xs uppercase text-gray-300 mb-2">Select Your Category</label>
+              <div class="grid grid-cols-2 sm:grid-cols-4 gap-2">
+                <label class="category-radio-label">
+                  <input type="radio" name="interestGroup" value="Fan & Ticket Alerts" checked class="sr-only">
+                  <span class="category-btn">Fight Fan</span>
+                </label>
+                <label class="category-radio-label">
+                  <input type="radio" name="interestGroup" value="Investor & Partner" class="sr-only">
+                  <span class="category-btn">Investor</span>
+                </label>
+                <label class="category-radio-label">
+                  <input type="radio" name="interestGroup" value="Press & Media" class="sr-only">
+                  <span class="category-btn">Press / Media</span>
+                </label>
+                <label class="category-radio-label">
+                  <input type="radio" name="interestGroup" value="VIP Ringside Club" class="sr-only">
+                  <span class="category-btn">VIP Ringside</span>
+                </label>
+              </div>
+            </div>
+
+            <!-- Email Input Field -->
+            <div class="relative">
+              <label for="userEmail" class="block font-mono text-xs uppercase text-gray-300 mb-2">Your Email Address</label>
+              <div class="flex flex-col sm:flex-row gap-3">
+                <input 
+                  type="email" 
+                  id="userEmail" 
+                  name="email" 
+                  required 
+                  placeholder="name@example.com" 
+                  class="w-full px-4 py-3.5 rounded-lg bg-black/80 border border-gold/40 text-white placeholder-gray-500 font-sans focus:outline-none focus:border-gold focus:ring-2 focus:ring-gold/30 transition-all text-base"
+                >
+                <button type="submit" id="submitBtn" class="btn-primary whitespace-nowrap px-8 py-3.5">
+                  <span id="btnText">JOIN WAITLIST</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Privacy Guarantee -->
+            <div class="flex items-center justify-between text-[11px] font-mono text-gray-400">
+              <span>🔒 100% Confidential. Zero spam.</span>
+              <span id="subCountText" class="text-gold">Verified Priority Queue</span>
+            </div>
+
+            <!-- Form Status / Response Message -->
+            <div id="formFeedback" class="hidden p-4 rounded-lg text-center text-sm font-mono" role="alert"></div>
+
+          </form>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CHAMPIONSHIP FIGHT CARD SECTION (MANNY PACQUIAO VS VICTOR ORTIZ) -->
+    <section id="fight-card" class="py-16 px-4 relative overflow-hidden bg-dark">
+      <div class="max-w-6xl mx-auto w-full relative z-10 flex flex-col items-center">
+
         <!-- MAIN MATCHUP FIGHT CARD WITH FIGHTER PHOTOS -->
-        <div class="w-full fight-marquee-card relative rounded-2xl border border-gold/40 bg-gradient-to-b from-charcoal/90 via-dark/95 to-black p-6 sm:p-8 lg:p-10 shadow-2xl backdrop-blur-md overflow-hidden">
+        <div class="w-full fight-marquee-card scrolly-reveal relative rounded-2xl border border-gold/40 bg-gradient-to-b from-charcoal/90 via-dark/95 to-black p-6 sm:p-8 lg:p-10 shadow-2xl backdrop-blur-md overflow-hidden">
           
           <!-- Event Date & Location Banner -->
           <div class="text-center pb-6 border-b border-gold/20 mb-8">
@@ -231,10 +309,10 @@
             </div>
           </div>
 
-          <!-- Primary Actions -->
+          <!-- Secondary Actions -->
           <div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
             <a href="#vip-access" class="btn-primary w-full sm:w-auto text-center">
-              <span>GET VIP TICKET &amp; RINGSIDE ALERTS</span>
+              <span>RESERVE RINGSIDE PRIORITY</span>
             </a>
             <a href="#partners" class="btn-secondary w-full sm:w-auto text-center">
               <span>VIEW STRATEGIC PARTNERS</span>
@@ -376,84 +454,6 @@
       </div>
     </section>
 
-    <!-- VIP ACCESS & EMAIL CAPTURE -->
-    <section id="vip-access" class="py-24 px-4 relative overflow-hidden bg-dark">
-      <div class="ambient-pink-glow top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-30"></div>
-
-      <div class="max-w-3xl mx-auto relative z-10">
-        
-        <div class="vip-container scrolly-reveal rounded-2xl border border-gold/40 bg-gradient-to-b from-charcoal/90 to-black p-6 sm:p-10 shadow-2xl backdrop-blur-md">
-          
-          <div class="text-center mb-8">
-            <span class="font-mono text-xs uppercase tracking-widest text-pink block mb-2">Direct-To-Consumer VIP Hub</span>
-            <h2 class="font-display font-bold text-3xl sm:text-4xl uppercase tracking-tight text-white mb-2">
-              CLAIM YOUR <span class="text-gold">RINGSIDE</span> ACCESS
-            </h2>
-            <p class="text-gray-300 text-sm sm:text-base font-light">
-              Join the priority list for Fight-Week ticket alerts, VIP credentials, and official event announcements.
-            </p>
-          </div>
-
-          <!-- Email Collection Form -->
-          <form id="emailCaptureForm" class="space-y-5">
-            
-            <!-- Category Selector -->
-            <div>
-              <label class="block font-mono text-xs uppercase text-gray-300 mb-2">Select Your Category</label>
-              <div class="grid grid-cols-2 sm:grid-cols-4 gap-2">
-                <label class="category-radio-label">
-                  <input type="radio" name="interestGroup" value="Fan & Ticket Alerts" checked class="sr-only">
-                  <span class="category-btn">Fight Fan</span>
-                </label>
-                <label class="category-radio-label">
-                  <input type="radio" name="interestGroup" value="Investor & Partner" class="sr-only">
-                  <span class="category-btn">Investor</span>
-                </label>
-                <label class="category-radio-label">
-                  <input type="radio" name="interestGroup" value="Press & Media" class="sr-only">
-                  <span class="category-btn">Press / Media</span>
-                </label>
-                <label class="category-radio-label">
-                  <input type="radio" name="interestGroup" value="VIP Ringside Club" class="sr-only">
-                  <span class="category-btn">VIP Ringside</span>
-                </label>
-              </div>
-            </div>
-
-            <!-- Email Input Field -->
-            <div class="relative">
-              <label for="userEmail" class="block font-mono text-xs uppercase text-gray-300 mb-2">Your Email Address</label>
-              <div class="flex flex-col sm:flex-row gap-3">
-                <input 
-                  type="email" 
-                  id="userEmail" 
-                  name="email" 
-                  required 
-                  placeholder="name@example.com" 
-                  class="w-full px-4 py-3.5 rounded-lg bg-black/80 border border-gold/40 text-white placeholder-gray-500 font-sans focus:outline-none focus:border-gold focus:ring-2 focus:ring-gold/30 transition-all text-base"
-                >
-                <button type="submit" id="submitBtn" class="btn-primary whitespace-nowrap px-8 py-3.5">
-                  <span id="btnText">JOIN WAITLIST</span>
-                </button>
-              </div>
-            </div>
-
-            <!-- Privacy Guarantee -->
-            <div class="flex items-center justify-between text-[11px] font-mono text-gray-400">
-              <span>🔒 100% Confidential. Zero spam.</span>
-              <span id="subCountText" class="text-gold">Verified Priority Queue</span>
-            </div>
-
-            <!-- Form Status / Response Message -->
-            <div id="formFeedback" class="hidden p-4 rounded-lg text-center text-sm font-mono" role="alert"></div>
-
-          </form>
-
-        </div>
-
-      </div>
-    </section>
-
     <!-- EXECUTIVE LEADERSHIP & DIRECTORY -->
     <section id="leadership" class="py-20 px-4 relative overflow-hidden border-t border-gold/15 bg-charcoal/40">
       <div class="max-w-6xl mx-auto">
@@ -537,10 +537,11 @@
       </div>
 
       <div class="flex items-center gap-6 font-mono text-[11px] uppercase tracking-wider">
-        <a href="#fight-card" class="hover:text-gold transition-colors">Championship Fight</a>
+        <a href="#vip-access" class="hover:text-gold transition-colors">VIP Access</a>
+        <a href="#fight-card" class="hover:text-gold transition-colors">Fight Card</a>
         <a href="#partners" class="hover:text-gold transition-colors">Partners</a>
         <a href="#heritage" class="hover:text-gold transition-colors">Jack Johnson</a>
-        <a href="#vip-access" class="hover:text-gold transition-colors">VIP Access</a>
+        <a href="#leadership" class="hover:text-gold transition-colors">Leadership</a>
       </div>
 
       <div class="text-center md:text-right text-[11px] font-mono text-gray-500">
