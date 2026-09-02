@@ -3,22 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-  <title>THE DSTRCT &bull; PHAT PINK LACES | Manny Pacquiao vs Victor Ortiz</title>
+  <title>PHAT PINK LACES | Manny Pacquiao vs Victor Ortiz &bull; Las Vegas 2027</title>
   
   <!-- SEO & OpenGraph Meta Tags -->
-  <meta name="description" content="Where Culture, Sport, and Entertainment Converge. Official home of The DSTRCT & Phat Pink Laces presenting Manny Pacquiao vs Victor Ortiz at T-Mobile Arena Las Vegas, March 3-4, 2027. Broadcast partner DAZN.">
-  <meta name="keywords" content="The DSTRCT, Phat Pink Laces, Manny Pacquiao, Victor Ortiz, Boxing, Las Vegas, T-Mobile Arena, DAZN, Nothing But Sportz, Onie Rivers">
-  <meta name="author" content="THE DSTRCT / Gravity Claw">
-  <meta property="og:title" content="THE DSTRCT • PHAT PINK LACES | Fight Week 2027">
-  <meta property="og:description" content="Manny Pacquiao vs Victor Ortiz — Live at T-Mobile Arena Las Vegas, March 3-4, 2027. Sanctioned Fight Event.">
+  <meta name="description" content="Official home of PHAT PINK LACES presenting the sanctioned Championship Bout: Manny Pacquiao vs Victor Ortiz live at T-Mobile Arena Las Vegas, March 3-4, 2027. Broadcast worldwide on DAZN.">
+  <meta name="keywords" content="Phat Pink Laces, Manny Pacquiao, Victor Ortiz, Boxing, Las Vegas, T-Mobile Arena, DAZN, Nothing But Sportz, Jack Johnson, Onie Rivers">
+  <meta name="author" content="Phat Pink Laces / Dabblin Cloud">
+  <meta property="og:title" content="PHAT PINK LACES | Pacquiao vs Ortiz • Las Vegas 2027">
+  <meta property="og:description" content="Championship Fight Week: Manny Pacquiao vs Victor Ortiz live at T-Mobile Arena, Las Vegas. March 3-4, 2027. Broadcast on DAZN.">
   <meta property="og:image" content="assets/phat_pink_laces_logo.png">
   <meta property="og:type" content="website">
-  <meta name="theme-color" content="#08080a">
+  <meta name="theme-color" content="#09090b">
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,700;0,800;0,900;1,700;1,900&family=Cinzel:wght@600;700;900&family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,700;0,800;1,700&family=Cinzel:wght@600;700&family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
 
   <!-- Tailwind CSS CDN & Custom Config -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -27,15 +27,16 @@
       theme: {
         extend: {
           colors: {
-            dark: '#08080a',
+            dark: '#09090b',
             charcoal: '#121216',
-            gold: '#c9a84c',
-            'gold-bright': '#e5c158',
-            pink: '#ff2a85',
-            'pink-hot': '#ff007f',
+            surface: '#18181c',
+            gold: '#c5a059',
+            'gold-bright': '#dfb96c',
+            pink: '#d9467a',
+            'pink-soft': '#e26d95',
             sepia: {
               DEFAULT: '#8d7b68',
-              dark: '#2c251e'
+              dark: '#221c17'
             }
           },
           fontFamily: {
@@ -45,9 +46,8 @@
             mono: ['"Space Grotesk"', 'monospace']
           },
           boxShadow: {
-            'gold-sm': '0 0 15px rgba(201, 168, 76, 0.25)',
-            'gold-lg': '0 0 30px rgba(201, 168, 76, 0.4)',
-            'pink-glow': '0 0 25px rgba(255, 42, 133, 0.5)'
+            'gold-sm': '0 0 12px rgba(197, 160, 89, 0.2)',
+            'pink-sm': '0 0 12px rgba(217, 70, 122, 0.25)'
           }
         }
       }
@@ -56,7 +56,7 @@
 
   <link rel="stylesheet" href="styles.css">
 </head>
-<body class="bg-dark text-light antialiased overflow-x-hidden">
+<body class="bg-dark text-gray-100 antialiased overflow-x-hidden">
 
   <!-- 1920s Silent Movie Iris Opener -->
   <div id="irisOverlay" class="iris-overlay" aria-hidden="true">
@@ -65,7 +65,7 @@
         <div class="countdown-circle">
           <span id="leaderNumber">3</span>
         </div>
-        <p class="leader-text">A DSTRCT / PHAT <span class="text-pink">PINK</span> LACES PRESENTATION</p>
+        <p class="leader-text">A PHAT <span class="text-pink">PINK</span> LACES PRESENTATION</p>
       </div>
     </div>
   </div>
@@ -75,29 +75,29 @@
   <div class="vintage-vignette" aria-hidden="true"></div>
 
   <!-- Navigation Bar -->
-  <header class="fixed top-0 left-0 right-0 z-40 backdrop-blur-md bg-dark/85 border-b border-gold/20 transition-all duration-300" id="mainHeader">
+  <header class="fixed top-0 left-0 right-0 z-40 backdrop-blur-md bg-dark/90 border-b border-gold/20 transition-all duration-300" id="mainHeader">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
       
-      <!-- Brand Logo Combo -->
-      <a href="#hero" class="flex items-center gap-3 group focus:outline-none" aria-label="Home">
-        <div class="h-12 w-12 rounded-full border border-gold/40 p-1 bg-black/60 shadow-gold-sm flex items-center justify-center transition-transform group-hover:scale-105">
+      <!-- Brand Logo Combo (Focus: PHAT PINK LACES) -->
+      <a href="#fight-card" class="flex items-center gap-3.5 group focus:outline-none" aria-label="Phat Pink Laces Home">
+        <div class="h-12 w-12 rounded-full border border-gold/40 p-1 bg-black/80 shadow-gold-sm flex items-center justify-center transition-transform group-hover:scale-105">
           <img src="assets/phat_pink_laces_logo.png" alt="Phat Pink Laces Emblem" class="h-full w-full object-contain rounded-full">
         </div>
         <div class="flex flex-col">
-          <span class="font-display font-extrabold text-xl tracking-wider uppercase leading-none text-white">
-            THE <span class="text-gold">DSTRCT</span>
+          <span class="font-display font-black text-xl sm:text-2xl tracking-wide uppercase leading-none text-white">
+            PHAT <span class="text-pink">PINK</span> LACES
           </span>
-          <span class="font-display font-bold text-xs tracking-widest uppercase text-gray-400">
-            PHAT <span class="text-pink font-black drop-shadow-[0_0_8px_rgba(255,42,133,0.8)]">PINK</span> LACES
+          <span class="font-mono text-[10px] tracking-widest uppercase text-gray-400 mt-0.5">
+            Championship Boxing &bull; Las Vegas
           </span>
         </div>
       </a>
 
       <!-- Desktop Navigation Links -->
-      <nav class="hidden md:flex items-center gap-8 font-mono text-xs uppercase tracking-widest text-gray-300">
-        <a href="#heritage" class="nav-link hover:text-gold transition-colors">Heritage</a>
-        <a href="#fight-card" class="nav-link hover:text-gold transition-colors">Fight Card</a>
-        <a href="#partners" class="nav-link hover:text-gold transition-colors">Distribution</a>
+      <nav class="hidden md:flex items-center gap-8 font-mono text-xs uppercase tracking-wider text-gray-300">
+        <a href="#fight-card" class="nav-link hover:text-gold transition-colors">Championship Fight</a>
+        <a href="#partners" class="nav-link hover:text-gold transition-colors">Strategic Partners</a>
+        <a href="#heritage" class="nav-link hover:text-gold transition-colors">Jack Johnson Legacy</a>
         <a href="#leadership" class="nav-link hover:text-gold transition-colors">Leadership</a>
       </nav>
 
@@ -120,246 +120,98 @@
     </div>
   </header>
 
-  <!-- MAIN SCROLLYTELLING CONTAINER -->
+  <!-- MAIN SCROLLYTELLING CONTENT -->
   <main id="mainContent">
 
-    <!-- HERO SECTION -->
-    <section id="hero" class="relative min-h-screen flex items-center justify-center pt-24 pb-16 px-4 overflow-hidden">
-      <!-- Background Ambient Glow -->
-      <div class="absolute inset-0 bg-radial-vignette opacity-70 pointer-events-none"></div>
-      <div class="ambient-glow -top-40 left-1/2 -translate-x-1/2"></div>
-      <div class="ambient-pink-glow bottom-10 right-10"></div>
+    <!-- HERO SECTION: CHAMPIONSHIP FIGHT AT THE TOP -->
+    <section id="fight-card" class="relative min-h-screen flex items-center justify-center pt-28 pb-20 px-4 overflow-hidden">
+      <!-- Ambient Glows -->
+      <div class="ambient-glow top-10 left-1/2 -translate-x-1/2"></div>
+      <div class="ambient-pink-glow bottom-10 right-10 opacity-40"></div>
 
-      <div class="max-w-6xl mx-auto w-full text-center relative z-10 flex flex-col items-center">
+      <div class="max-w-6xl mx-auto w-full relative z-10 flex flex-col items-center">
         
-        <!-- Live Status Pill -->
-        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-gold/10 border border-gold/30 text-gold font-mono text-xs uppercase tracking-widest mb-6 animate-fade-down shadow-gold-sm">
-          <span class="w-2 h-2 rounded-full bg-gold animate-ping"></span>
-          <span>Official Sanctioned Fight Announcement</span>
-        </div>
-
-        <!-- Main Title with Custom Staggered Typography -->
-        <h1 class="font-display font-black text-5xl sm:text-7xl md:text-8xl lg:text-9xl uppercase tracking-tight leading-none mb-4 text-white drop-shadow-2xl">
-          THE <span class="text-gold inline-block">DSTRCT</span>
-        </h1>
-
-        <div class="relative mb-6">
-          <div class="font-display font-black text-3xl sm:text-5xl md:text-6xl lg:text-7xl uppercase tracking-wider text-gray-200">
-            PHAT <span class="text-pink font-black drop-shadow-[0_0_20px_rgba(255,42,133,0.9)] animate-pulse-subtle">PINK</span> LACES
+        <!-- Top Presenter Header -->
+        <div class="text-center mb-6">
+          <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-gold/10 border border-gold/30 text-gold font-mono text-xs uppercase tracking-widest mb-3 shadow-gold-sm">
+            <span class="w-2 h-2 rounded-full bg-gold animate-ping"></span>
+            <span>Sanctioned Championship Event</span>
           </div>
-          <p class="font-serif italic text-gold/80 text-sm sm:text-lg mt-1 tracking-widest">
-            &ldquo;Where Culture, Sport, and Entertainment Converge&rdquo;
+          <h1 class="font-display font-black text-3xl sm:text-5xl md:text-6xl uppercase tracking-wide text-white leading-tight">
+            PHAT <span class="text-pink">PINK</span> LACES PRESENTS
+          </h1>
+          <p class="font-mono text-sm sm:text-base text-gray-300 tracking-wider mt-1">
+            Championship Boxing Live from Las Vegas &bull; In Association with The DSTRCT
           </p>
         </div>
 
-        <!-- Centerpiece Boxing Emblem with Scrollytelling Tilt -->
-        <div class="my-6 relative group cursor-pointer" id="heroEmblemContainer">
-          <div class="absolute -inset-4 bg-gradient-to-r from-gold/20 via-pink/20 to-gold/20 rounded-full blur-xl opacity-60 group-hover:opacity-100 transition-all duration-700"></div>
-          <div class="relative w-48 sm:w-60 md:w-72 h-48 sm:h-60 md:h-72 rounded-full border-2 border-gold/50 p-2 bg-black/80 shadow-2xl backdrop-blur-md transform transition-transform duration-500 group-hover:scale-105">
-            <img src="assets/phat_pink_laces_logo.png" alt="Phat Pink Laces Emblem" class="w-full h-full object-contain rounded-full">
-          </div>
-          <!-- Vintage Stamp Overlay -->
-          <div class="absolute -bottom-3 -right-2 bg-dark border border-gold px-3 py-1 rounded text-[10px] font-mono uppercase tracking-widest text-gold shadow-lg">
-            Est. Harlem Legacy
-          </div>
-        </div>
-
-        <!-- Marquee Tagline -->
-        <p class="max-w-2xl text-gray-300 font-sans text-base sm:text-lg md:text-xl font-light leading-relaxed mb-8">
-          A high-stakes, women-led sports and live entertainment division. Honoring the fearless heritage of 1920s boxing while commanding the next dimension of global fight entertainment.
-        </p>
-
-        <!-- CTA Buttons -->
-        <div class="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto">
-          <a href="#fight-card" class="btn-primary w-full sm:w-auto text-center">
-            <span>EXPLORE FIGHT CARD</span>
-          </a>
-          <a href="#vip-access" class="btn-secondary w-full sm:w-auto text-center">
-            <span>GET VIP ACCESS &amp; UPDATES</span>
-          </a>
-        </div>
-
-        <!-- Scroll Indicator -->
-        <div class="mt-16 flex flex-col items-center gap-2 text-gray-400 font-mono text-[10px] uppercase tracking-widest animate-bounce">
-          <span>Scroll To Unveil</span>
-          <svg class="w-4 h-4 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-          </svg>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- SCROLLYTELLING ACT I: THE HERITAGE & 1920s HARLEM GENESIS -->
-    <section id="heritage" class="py-24 px-4 relative overflow-hidden border-t border-b border-gold/15 bg-gradient-to-b from-dark via-charcoal to-dark">
-      <div class="max-w-6xl mx-auto">
-        
-        <!-- Section Header -->
-        <div class="text-center mb-16 scrolly-reveal">
-          <span class="font-mono text-xs uppercase tracking-widest text-gold/80 block mb-2">Act I &bull; Historical Lineage</span>
-          <h2 class="font-display font-black text-4xl sm:text-5xl md:text-6xl uppercase tracking-tight text-white">
-            ROOTED IN <span class="text-gold">LEGACY</span>. BUILT FOR THE <span class="text-pink">FUTURE</span>.
-          </h2>
-          <div class="w-24 h-0.5 bg-gradient-to-r from-transparent via-gold to-transparent mx-auto mt-4"></div>
-        </div>
-
-        <!-- Scrollytelling Two-Column Narrative -->
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <!-- MAIN MATCHUP FIGHT CARD WITH FIGHTER PHOTOS -->
+        <div class="w-full fight-marquee-card relative rounded-2xl border border-gold/40 bg-gradient-to-b from-charcoal/90 via-dark/95 to-black p-6 sm:p-8 lg:p-10 shadow-2xl backdrop-blur-md overflow-hidden">
           
-          <!-- Left: Narrative Cards -->
-          <div class="lg:col-span-7 space-y-8">
+          <!-- Event Date & Location Banner -->
+          <div class="text-center pb-6 border-b border-gold/20 mb-8">
+            <div class="flex flex-wrap items-center justify-center gap-3 font-mono text-xs sm:text-sm uppercase tracking-widest text-gold mb-1">
+              <span class="font-bold">MARCH 3 &bull; 4, 2027</span>
+              <span class="text-gray-500">&bull;</span>
+              <span>T-MOBILE ARENA, LAS VEGAS</span>
+            </div>
+            <div class="inline-block px-3 py-1 rounded bg-pink/15 border border-pink/30 text-pink-soft font-mono text-[11px] uppercase tracking-wider mt-2">
+              Broadcast Live Worldwide on DAZN
+            </div>
+          </div>
+
+          <!-- Combatants Head-to-Head Section -->
+          <div class="grid grid-cols-1 md:grid-cols-11 gap-6 items-center">
             
-            <!-- Card 1: Jack Johnson & The Cotton Club -->
-            <div class="story-card scrolly-reveal">
-              <div class="flex items-start gap-4">
-                <div class="badge-number">01</div>
-                <div>
-                  <h3 class="font-display font-bold text-2xl uppercase tracking-wide text-gold mb-2">
-                    Jack Johnson &amp; The Cotton Club Genesis
-                  </h3>
-                  <p class="text-gray-300 font-light text-sm sm:text-base leading-relaxed">
-                    In the 1920s, heavyweight champion <strong>Jack Johnson</strong> opened the Club Deluxe in Harlem, which gangster <strong>Owney Madden</strong> later acquired and transformed into the legendary <em>Cotton Club</em>. That era forged the unbreakable bond between championship boxing, Black culture, high-society glamour, and cinematic entertainment.
-                  </p>
+            <!-- Boxer 1: Manny Pacquiao -->
+            <div class="md:col-span-5 fighter-card text-center md:text-left p-5 sm:p-6 rounded-xl border border-gold/30 bg-black/60 backdrop-blur-sm group hover:border-gold transition-all duration-300">
+              <div class="relative w-full aspect-square max-w-[280px] mx-auto md:mx-0 rounded-lg overflow-hidden mb-4 border border-gold/30 shadow-lg">
+                <img src="assets/manny_pacquiao.jpg" alt="Manny Pacquiao Championship Fighter Photo" class="w-full h-full object-cover grayscale contrast-125 group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+                <div class="absolute bottom-2 left-3 text-left">
+                  <span class="font-mono text-[10px] text-gold uppercase tracking-wider block">8-Division World Legend</span>
+                  <span class="font-display font-black text-lg text-white uppercase">Manny Pacquiao</span>
                 </div>
               </div>
-            </div>
-
-            <!-- Card 2: Pygmalion at The Cotton Club -->
-            <div class="story-card scrolly-reveal">
-              <div class="flex items-start gap-4">
-                <div class="badge-number">02</div>
-                <div>
-                  <h3 class="font-display font-bold text-2xl uppercase tracking-wide text-pink mb-2">
-                    The Cinematic &ldquo;Pygmalion&rdquo; Vision
-                  </h3>
-                  <p class="text-gray-300 font-light text-sm sm:text-base leading-relaxed">
-                    Drawing direct inspiration from the upcoming cinematic production <em>Pygmalion at The Cotton Club</em>, Onie Rivers and THE DSTRCT weave vintage silent-film drama with contemporary high-voltage live sports.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <!-- Card 3: The Female Vanguard in Fight Sports -->
-            <div class="story-card scrolly-reveal">
-              <div class="flex items-start gap-4">
-                <div class="badge-number">03</div>
-                <div>
-                  <h3 class="font-display font-bold text-2xl uppercase tracking-wide text-white mb-2">
-                    Breaking Barriers: Phat <span class="text-pink">Pink</span> Laces
-                  </h3>
-                  <p class="text-gray-300 font-light text-sm sm:text-base leading-relaxed">
-                    Decades of producing live arena tours, national music galas, and boxing awards shows culminate in <strong>PHAT PINK LACES</strong>. A women-led powerhouse redefining the commercial authority and artistic grandeur of world-class boxing.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-          </div>
-
-          <!-- Right: Visual Artifact & Historical Showcase -->
-          <div class="lg:col-span-5 flex flex-col items-center scrolly-reveal">
-            <div class="vintage-frame relative p-4 rounded-lg bg-black/60 border border-gold/30 shadow-2xl">
-              <!-- Sepia Photo Vignette -->
-              <div class="relative overflow-hidden rounded border border-gold/20 aspect-[4/5] flex items-center justify-center bg-gradient-to-b from-sepia-dark to-black">
-                <img src="assets/the_dstrct_logo.png" alt="The DSTRCT Official Brand Mark" class="w-4/5 h-4/5 object-contain filter sepia contrast-125 hover:filter-none transition-all duration-700">
-                <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-80"></div>
-                <div class="absolute bottom-4 left-4 right-4 text-center">
-                  <span class="font-mono text-xs uppercase tracking-widest text-gold block">THE DSTRCT ARCHITECTURE</span>
-                  <span class="text-gray-400 text-[11px] font-sans">Executive Strategic Production &bull; Worldwide</span>
-                </div>
-              </div>
-
-              <!-- Archival Details Bar -->
-              <div class="mt-4 pt-3 border-t border-gold/20 flex justify-between items-center text-[11px] font-mono text-gray-400 uppercase">
-                <span>Archives: 1920 &bull; 2027</span>
-                <span class="text-gold">Authentic Provenance</span>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-
-    <!-- SCROLLYTELLING ACT II: THE SANCTIONED FIGHT CARD -->
-    <section id="fight-card" class="py-24 px-4 relative overflow-hidden bg-dark">
-      <div class="ambient-glow top-1/3 left-1/4"></div>
-
-      <div class="max-w-6xl mx-auto relative z-10">
-        
-        <!-- Section Header -->
-        <div class="text-center mb-16 scrolly-reveal">
-          <span class="font-mono text-xs uppercase tracking-widest text-gold block mb-2">Act II &bull; The Main Event</span>
-          <h2 class="font-display font-black text-4xl sm:text-6xl md:text-7xl uppercase tracking-tight text-white">
-            CHAMPIONSHIP <span class="text-gold">FIGHT WEEK</span>
-          </h2>
-          <p class="font-sans text-gray-400 text-sm sm:text-base max-w-xl mx-auto mt-2">
-            Sanctioned Superfight Live from the Entertainment Capital of the World.
-          </p>
-        </div>
-
-        <!-- Marquee Fight Banner Card -->
-        <div class="fight-marquee-card scrolly-reveal relative rounded-2xl border-2 border-gold/40 bg-gradient-to-b from-charcoal via-dark to-black p-6 sm:p-10 lg:p-12 shadow-2xl overflow-hidden">
-          
-          <!-- Corner Badges -->
-          <div class="absolute top-4 left-4 sm:top-6 sm:left-6 flex items-center gap-2 font-mono text-xs uppercase text-gold bg-gold/10 border border-gold/30 px-3 py-1 rounded">
-            <span class="w-1.5 h-1.5 rounded-full bg-gold animate-ping"></span>
-            <span>Sanctioned Bout</span>
-          </div>
-
-          <div class="absolute top-4 right-4 sm:top-6 sm:right-6 font-mono text-xs uppercase text-pink bg-pink/10 border border-pink/30 px-3 py-1 rounded">
-            <span>Broadcast Live on DAZN</span>
-          </div>
-
-          <!-- Fight Details Header -->
-          <div class="text-center mt-8 mb-10">
-            <h3 class="font-display font-black text-2xl sm:text-3xl lg:text-4xl text-gold uppercase tracking-wider mb-1">
-              MARCH 3 &bull; 4, 2027
-            </h3>
-            <p class="font-sans font-medium text-lg sm:text-xl text-gray-200 uppercase tracking-widest">
-              T-MOBILE ARENA &bull; LAS VEGAS, NEVADA
-            </p>
-          </div>
-
-          <!-- The Combatants Matchup Grid -->
-          <div class="grid grid-cols-1 md:grid-cols-11 gap-6 items-center my-8">
-            
-            <!-- Fighter 1: Manny Pacquiao -->
-            <div class="md:col-span-5 fighter-card text-center md:text-right p-6 rounded-xl border border-gold/20 bg-black/40 backdrop-blur-sm">
-              <span class="font-mono text-xs uppercase text-gold tracking-widest block mb-1">The 8-Division World Legend</span>
-              <h4 class="font-display font-black text-3xl sm:text-5xl uppercase tracking-tight text-white mb-2">
+              <h2 class="font-display font-bold text-2xl sm:text-3xl uppercase tracking-tight text-white mb-1">
                 MANNY <span class="text-gold">PACQUIAO</span>
-              </h4>
-              <p class="text-gray-400 text-xs sm:text-sm font-sans">
-                Hall of Fame Icon &bull; Multiple-Time Champion &bull; The Pride of the Philippines
+              </h2>
+              <p class="text-gray-400 text-xs sm:text-sm font-sans leading-relaxed">
+                Hall of Fame Icon &bull; 12 World Titles &bull; Global Fighting Phenomenon
               </p>
             </div>
 
-            <!-- Center VS Emblem -->
+            <!-- Center VS Divider -->
             <div class="md:col-span-1 flex flex-col items-center justify-center my-2 md:my-0">
               <div class="vs-circle">
-                <span class="font-display font-black text-2xl text-pink animate-pulse">VS</span>
+                <span class="font-display font-black text-2xl text-pink">VS</span>
               </div>
             </div>
 
-            <!-- Fighter 2: Victor Ortiz -->
-            <div class="md:col-span-5 fighter-card text-center md:text-left p-6 rounded-xl border border-pink/30 bg-black/40 backdrop-blur-sm">
-              <span class="font-mono text-xs uppercase text-pink tracking-widest block mb-1">Former WBC World Champion</span>
-              <h4 class="font-display font-black text-3xl sm:text-5xl uppercase tracking-tight text-white mb-2">
+            <!-- Boxer 2: Victor Ortiz -->
+            <div class="md:col-span-5 fighter-card text-center md:text-right p-5 sm:p-6 rounded-xl border border-gold/30 bg-black/60 backdrop-blur-sm group hover:border-gold transition-all duration-300">
+              <div class="relative w-full aspect-square max-w-[280px] mx-auto md:ml-auto md:mr-0 rounded-lg overflow-hidden mb-4 border border-gold/30 shadow-lg">
+                <img src="assets/victor_ortiz.jpg" alt="Victor Ortiz Championship Fighter Photo" class="w-full h-full object-cover grayscale contrast-125 group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+                <div class="absolute bottom-2 right-3 text-right">
+                  <span class="font-mono text-[10px] text-pink-soft uppercase tracking-wider block">Former WBC World Champion</span>
+                  <span class="font-display font-black text-lg text-white uppercase">Victor Ortiz</span>
+                </div>
+              </div>
+              <h2 class="font-display font-bold text-2xl sm:text-3xl uppercase tracking-tight text-white mb-1">
                 VICTOR <span class="text-pink">ORTIZ</span>
-              </h4>
-              <p class="text-gray-400 text-xs sm:text-sm font-sans">
-                World-Class Southpaw &bull; Welterweight Power &bull; High-Voltage Showman
+              </h2>
+              <p class="text-gray-400 text-xs sm:text-sm font-sans leading-relaxed">
+                Welterweight Powerhouse &bull; Explosive Southpaw &bull; World-Class Showman
               </p>
             </div>
 
           </div>
 
-          <!-- Fight Week Countdown Clock -->
-          <div class="mt-12 pt-8 border-t border-gold/20 text-center">
+          <!-- Fight Night Countdown Clock -->
+          <div class="mt-10 pt-8 border-t border-gold/20 text-center">
             <span class="font-mono text-xs uppercase tracking-widest text-gray-400 block mb-4">Official Countdown To Fight Night</span>
-            <div class="grid grid-cols-4 gap-2 sm:gap-4 max-w-lg mx-auto" id="countdownTimer">
+            <div class="grid grid-cols-4 gap-2 sm:gap-4 max-w-md mx-auto" id="countdownTimer">
               <div class="countdown-box">
                 <span class="countdown-val" id="daysVal">182</span>
                 <span class="countdown-label">Days</span>
@@ -379,11 +231,14 @@
             </div>
           </div>
 
-          <!-- Undercard Notice -->
-          <div class="mt-8 text-center">
-            <p class="text-xs font-mono uppercase text-gray-400 tracking-wider">
-              * Full International Undercard &amp; Celebrity Performances To Be Announced Soon
-            </p>
+          <!-- Primary Actions -->
+          <div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
+            <a href="#vip-access" class="btn-primary w-full sm:w-auto text-center">
+              <span>GET VIP TICKET &amp; RINGSIDE ALERTS</span>
+            </a>
+            <a href="#partners" class="btn-secondary w-full sm:w-auto text-center">
+              <span>VIEW STRATEGIC PARTNERS</span>
+            </a>
           </div>
 
         </div>
@@ -391,23 +246,23 @@
       </div>
     </section>
 
-    <!-- SCROLLYTELLING ACT III: STRATEGIC PARTNERS & DISTRIBUTION NETWORK -->
-    <section id="partners" class="py-20 px-4 relative overflow-hidden border-t border-gold/15 bg-charcoal/50">
+    <!-- STRATEGIC PARTNERS & DISTRIBUTION NETWORK -->
+    <section id="partners" class="py-20 px-4 relative overflow-hidden border-t border-b border-gold/20 bg-charcoal/60">
       <div class="max-w-6xl mx-auto">
         
         <!-- Section Header -->
-        <div class="text-center mb-16 scrolly-reveal">
-          <span class="font-mono text-xs uppercase tracking-widest text-gold block mb-2">Act III &bull; Global Ecosystem</span>
-          <h2 class="font-display font-black text-3xl sm:text-5xl uppercase tracking-tight text-white">
-            STRATEGIC PARTNERS &amp; <span class="text-gold">DISTRIBUTION</span>
+        <div class="text-center mb-14 scrolly-reveal">
+          <span class="font-mono text-xs uppercase tracking-widest text-gold block mb-2">Global Distribution &bull; Alliances</span>
+          <h2 class="font-display font-bold text-3xl sm:text-4xl md:text-5xl uppercase tracking-tight text-white">
+            STRATEGIC <span class="text-gold">PARTNERS</span>
           </h2>
           <p class="font-sans text-gray-400 text-sm sm:text-base max-w-xl mx-auto mt-2">
-            Backed by premier sports distribution, promotional titans, and strategic entertainment consultants.
+            Backed by premier sports broadcasters, promotional leaders, and world-class boxing consultants.
           </p>
         </div>
 
-        <!-- Partners Grid -->
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- 3-Column Partners Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
           
           <!-- Partner 1: DAZN -->
           <div class="partner-card scrolly-reveal">
@@ -427,18 +282,18 @@
             </div>
             <h3 class="font-display font-bold text-lg uppercase text-gold mb-1">Strategic Sports Consultant</h3>
             <p class="text-gray-300 text-xs sm:text-sm font-light leading-relaxed">
-              Led by industry heavyweight <strong>Steve Marcano</strong> (Don King Network), providing masterclass fight matchmaking and executive relationships.
+              Led by industry heavyweight <strong>Steve Marcano</strong> (Don King Network), delivering executive fight matchmaking and strategic relationships.
             </p>
           </div>
 
-          <!-- Partner 3: Bare Knuckle Boxing (BKB) & Fight League -->
+          <!-- Partner 3: Bare Knuckle Boxing (BKB) -->
           <div class="partner-card scrolly-reveal">
             <div class="h-16 flex items-center justify-center mb-4">
-              <span class="font-display font-black text-4xl sm:text-5xl tracking-tight text-pink">BKB</span>
+              <span class="font-display font-black text-4xl sm:text-5xl tracking-tight text-pink-soft">BKB</span>
             </div>
-            <h3 class="font-display font-bold text-lg uppercase text-pink mb-1">Sports &amp; Talent Affiliate</h3>
+            <h3 class="font-display font-bold text-lg uppercase text-pink-soft mb-1">Sports &amp; Talent Affiliate</h3>
             <p class="text-gray-300 text-xs sm:text-sm font-light leading-relaxed">
-              Direct combat sports alignment, fighter development, and high-impact cross-promotional entertainment.
+              Direct combat sports alignment, fighter roster development, and high-energy promotional entertainment.
             </p>
           </div>
 
@@ -447,30 +302,104 @@
       </div>
     </section>
 
-    <!-- SCROLLYTELLING ACT IV: VIP ACCESS & EMAIL CAPTURE -->
-    <section id="vip-access" class="py-24 px-4 relative overflow-hidden bg-gradient-to-b from-dark via-black to-dark">
-      <div class="ambient-pink-glow top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"></div>
+    <!-- HERITAGE & JACK JOHNSON LEGACY SECTION -->
+    <section id="heritage" class="py-24 px-4 relative overflow-hidden bg-gradient-to-b from-dark via-charcoal to-dark">
+      <div class="max-w-6xl mx-auto">
+        
+        <!-- Section Header -->
+        <div class="text-center mb-16 scrolly-reveal">
+          <span class="font-mono text-xs uppercase tracking-widest text-gold block mb-2">Historical Provenance &bull; 1920s Harlem</span>
+          <h2 class="font-display font-bold text-3xl sm:text-4xl md:text-5xl uppercase tracking-tight text-white">
+            HONORING THE <span class="text-gold">JACK JOHNSON</span> LEGACY
+          </h2>
+          <div class="w-20 h-0.5 bg-gradient-to-r from-transparent via-gold to-transparent mx-auto mt-4"></div>
+        </div>
+
+        <!-- Two-Column Heritage Grid with Stylistic Jack Johnson Archival Frame -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+          
+          <!-- Left: Stylistic Archival Photo of Jack Johnson -->
+          <div class="lg:col-span-5 flex flex-col items-center scrolly-reveal">
+            <div class="vintage-frame relative p-4 rounded-xl bg-black/70 border border-gold/40 shadow-2xl">
+              <div class="relative overflow-hidden rounded-lg border border-gold/30 aspect-square flex items-center justify-center bg-sepia-dark">
+                <img src="assets/jack_johnson.jpg" alt="Jack Johnson Heavyweight Champion 1910s Archival Portrait" class="w-full h-full object-cover filter sepia contrast-115">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+                <div class="absolute bottom-3 left-4 right-4 text-center">
+                  <span class="font-mono text-xs uppercase tracking-widest text-gold block font-bold">JACK JOHNSON</span>
+                  <span class="text-gray-300 text-[11px] font-sans">First Black World Heavyweight Champion &bull; Club Deluxe Founder</span>
+                </div>
+              </div>
+              <div class="mt-3 pt-2 border-t border-gold/20 flex justify-between items-center text-[10px] font-mono text-gray-400 uppercase">
+                <span>Provenance: 1910s &bull; 1920s</span>
+                <span class="text-gold">Historic Champion</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Heritage Narrative -->
+          <div class="lg:col-span-7 space-y-6 scrolly-reveal">
+            
+            <!-- Point 1: Jack Johnson & Cotton Club Genesis -->
+            <div class="story-card">
+              <div class="flex items-start gap-4">
+                <div class="badge-number">01</div>
+                <div>
+                  <h3 class="font-display font-bold text-xl uppercase tracking-wide text-gold mb-2">
+                    The Club Deluxe &amp; Cotton Club Genesis
+                  </h3>
+                  <p class="text-gray-300 font-light text-sm sm:text-base leading-relaxed">
+                    Heavyweight icon <strong>Jack Johnson</strong> opened Harlem's Club Deluxe in the 1920s, which gangster <strong>Owney Madden</strong> later purchased and transformed into the legendary <em>Cotton Club</em>. That era created the enduring standard where championship boxing, cultural elegance, and high-voltage entertainment unite.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Point 2: The Women-Led Vanguard in Combat Sports -->
+            <div class="story-card">
+              <div class="flex items-start gap-4">
+                <div class="badge-number">02</div>
+                <div>
+                  <h3 class="font-display font-bold text-xl uppercase tracking-wide text-white mb-2">
+                    The Vanguard: PHAT <span class="text-pink">PINK</span> LACES
+                  </h3>
+                  <p class="text-gray-300 font-light text-sm sm:text-base leading-relaxed">
+                    Built upon decades of producing arena tours, televised sports awards, and music festivals, <strong>PHAT PINK LACES</strong> stands as a premier women-led powerhouse in boxing promotion, elevating fight sports into a refined cultural spectacle.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- VIP ACCESS & EMAIL CAPTURE -->
+    <section id="vip-access" class="py-24 px-4 relative overflow-hidden bg-dark">
+      <div class="ambient-pink-glow top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-30"></div>
 
       <div class="max-w-3xl mx-auto relative z-10">
         
-        <div class="vip-container scrolly-reveal rounded-2xl border-2 border-gold/50 bg-gradient-to-b from-charcoal/90 to-black p-8 sm:p-12 shadow-2xl backdrop-blur-md">
+        <div class="vip-container scrolly-reveal rounded-2xl border border-gold/40 bg-gradient-to-b from-charcoal/90 to-black p-6 sm:p-10 shadow-2xl backdrop-blur-md">
           
           <div class="text-center mb-8">
             <span class="font-mono text-xs uppercase tracking-widest text-pink block mb-2">Direct-To-Consumer VIP Hub</span>
-            <h2 class="font-display font-black text-3xl sm:text-5xl uppercase tracking-tight text-white mb-2">
+            <h2 class="font-display font-bold text-3xl sm:text-4xl uppercase tracking-tight text-white mb-2">
               CLAIM YOUR <span class="text-gold">RINGSIDE</span> ACCESS
             </h2>
             <p class="text-gray-300 text-sm sm:text-base font-light">
-              Join the priority list for Fight-Week credentials, early-bird tickets, exclusive merchandise drops, and investor materials.
+              Join the priority list for Fight-Week ticket alerts, VIP credentials, and official event announcements.
             </p>
           </div>
 
           <!-- Email Collection Form -->
-          <form id="emailCaptureForm" class="space-y-6">
+          <form id="emailCaptureForm" class="space-y-5">
             
-            <!-- Category Toggle -->
+            <!-- Category Selector -->
             <div>
-              <label class="block font-mono text-xs uppercase text-gray-300 mb-2">Select Your Access Category</label>
+              <label class="block font-mono text-xs uppercase text-gray-300 mb-2">Select Your Category</label>
               <div class="grid grid-cols-2 sm:grid-cols-4 gap-2">
                 <label class="category-radio-label">
                   <input type="radio" name="interestGroup" value="Fan & Ticket Alerts" checked class="sr-only">
@@ -482,7 +411,7 @@
                 </label>
                 <label class="category-radio-label">
                   <input type="radio" name="interestGroup" value="Press & Media" class="sr-only">
-                  <span class="category-btn">Press/Media</span>
+                  <span class="category-btn">Press / Media</span>
                 </label>
                 <label class="category-radio-label">
                   <input type="radio" name="interestGroup" value="VIP Ringside Club" class="sr-only">
@@ -501,7 +430,7 @@
                   name="email" 
                   required 
                   placeholder="name@example.com" 
-                  class="w-full px-4 py-3.5 rounded-lg bg-black/80 border border-gold/40 text-white placeholder-gray-500 font-sans focus:outline-none focus:border-pink focus:ring-2 focus:ring-pink/30 transition-all text-base"
+                  class="w-full px-4 py-3.5 rounded-lg bg-black/80 border border-gold/40 text-white placeholder-gray-500 font-sans focus:outline-none focus:border-gold focus:ring-2 focus:ring-gold/30 transition-all text-base"
                 >
                 <button type="submit" id="submitBtn" class="btn-primary whitespace-nowrap px-8 py-3.5">
                   <span id="btnText">JOIN WAITLIST</span>
@@ -509,7 +438,7 @@
               </div>
             </div>
 
-            <!-- Privacy Guarantee & Instant Notice -->
+            <!-- Privacy Guarantee -->
             <div class="flex items-center justify-between text-[11px] font-mono text-gray-400">
               <span>🔒 100% Confidential. Zero spam.</span>
               <span id="subCountText" class="text-gold">Verified Priority Queue</span>
@@ -525,31 +454,31 @@
       </div>
     </section>
 
-    <!-- SCROLLYTELLING ACT V: EXECUTIVE LEADERSHIP & DIRECTORY -->
-    <section id="leadership" class="py-20 px-4 relative overflow-hidden border-t border-gold/15 bg-charcoal/30">
+    <!-- EXECUTIVE LEADERSHIP & DIRECTORY -->
+    <section id="leadership" class="py-20 px-4 relative overflow-hidden border-t border-gold/15 bg-charcoal/40">
       <div class="max-w-6xl mx-auto">
         
         <!-- Section Header -->
-        <div class="text-center mb-16 scrolly-reveal">
-          <span class="font-mono text-xs uppercase tracking-widest text-gold block mb-2">Act V &bull; Executive Governance</span>
-          <h2 class="font-display font-black text-3xl sm:text-5xl uppercase tracking-tight text-white">
+        <div class="text-center mb-14 scrolly-reveal">
+          <span class="font-mono text-xs uppercase tracking-widest text-gold block mb-2">Executive Governance</span>
+          <h2 class="font-display font-bold text-3xl sm:text-4xl uppercase tracking-tight text-white">
             LEADERSHIP &amp; <span class="text-gold">CONTACT</span>
           </h2>
           <p class="font-sans text-gray-400 text-sm sm:text-base max-w-xl mx-auto mt-2">
-            Direct executive communications for sponsorships, television rights, and event partnerships.
+            Direct executive communications for sponsorships, broadcast licensing, and event partnerships.
           </p>
         </div>
 
         <!-- Contacts Grid -->
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
           
           <!-- Executive 1: Kira Willoughby -->
           <div class="contact-card scrolly-reveal">
-            <div class="w-14 h-14 rounded-full bg-gold/10 border border-gold/40 flex items-center justify-center font-display font-bold text-xl text-gold mb-4">
+            <div class="w-12 h-12 rounded-full bg-gold/10 border border-gold/40 flex items-center justify-center font-display font-bold text-lg text-gold mb-4">
               KW
             </div>
             <h3 class="font-display font-bold text-xl uppercase text-white mb-0.5">Kira Willoughby</h3>
-            <span class="font-mono text-xs uppercase text-pink block mb-3">Phat Pink Laces &bull; Executive</span>
+            <span class="font-mono text-xs uppercase text-pink-soft block mb-3">Phat Pink Laces &bull; Executive</span>
             <a href="mailto:povertyrowpro@gmail.com" class="text-xs font-mono text-gray-300 hover:text-gold transition-colors flex items-center gap-2">
               <svg class="w-4 h-4 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
@@ -559,14 +488,14 @@
           </div>
 
           <!-- Executive 2: Onie Rivers -->
-          <div class="contact-card scrolly-reveal border-gold/60 shadow-gold-sm">
-            <div class="w-14 h-14 rounded-full bg-pink/10 border border-pink/50 flex items-center justify-center font-display font-bold text-xl text-pink mb-4">
+          <div class="contact-card scrolly-reveal border-gold/50 shadow-gold-sm">
+            <div class="w-12 h-12 rounded-full bg-gold/15 border border-gold/50 flex items-center justify-center font-display font-bold text-lg text-gold mb-4">
               OR
             </div>
             <h3 class="font-display font-bold text-xl uppercase text-white mb-0.5">Onie Rivers</h3>
-            <span class="font-mono text-xs uppercase text-gold block mb-3">THE DSTRCT &bull; Principal Producer</span>
-            <a href="mailto:onie.rivers@gmail.com" class="text-xs font-mono text-gray-300 hover:text-pink transition-colors flex items-center gap-2">
-              <svg class="w-4 h-4 text-pink" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <span class="font-mono text-xs uppercase text-gold block mb-3">Principal Producer</span>
+            <a href="mailto:onie.rivers@gmail.com" class="text-xs font-mono text-gray-300 hover:text-gold transition-colors flex items-center gap-2">
+              <svg class="w-4 h-4 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
               </svg>
               <span>onie.rivers@gmail.com</span>
@@ -575,11 +504,11 @@
 
           <!-- Executive 3: Arlene Knight -->
           <div class="contact-card scrolly-reveal">
-            <div class="w-14 h-14 rounded-full bg-gold/10 border border-gold/40 flex items-center justify-center font-display font-bold text-xl text-gold mb-4">
+            <div class="w-12 h-12 rounded-full bg-gold/10 border border-gold/40 flex items-center justify-center font-display font-bold text-lg text-gold mb-4">
               AK
             </div>
             <h3 class="font-display font-bold text-xl uppercase text-white mb-0.5">Arlene Knight</h3>
-            <span class="font-mono text-xs uppercase text-pink block mb-3">Knight Crossing &bull; Executive</span>
+            <span class="font-mono text-xs uppercase text-pink-soft block mb-3">Knight Crossing &bull; Executive</span>
             <a href="mailto:knightcrossing@gmail.com" class="text-xs font-mono text-gray-300 hover:text-gold transition-colors flex items-center gap-2">
               <svg class="w-4 h-4 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
@@ -600,17 +529,17 @@
     <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
       
       <div class="flex items-center gap-3">
-        <img src="assets/phat_pink_laces_logo.png" alt="Logo" class="h-8 w-8 rounded-full border border-gold/40">
+        <img src="assets/phat_pink_laces_logo.png" alt="Phat Pink Laces Logo" class="h-8 w-8 rounded-full border border-gold/40">
         <div>
-          <p class="text-white font-display font-bold tracking-wider">THE DSTRCT &bull; PHAT <span class="text-pink">PINK</span> LACES</p>
+          <p class="text-white font-display font-bold tracking-wider">PHAT <span class="text-pink">PINK</span> LACES</p>
           <p class="text-[11px] text-gray-500">&copy; 2026-2027 All Rights Reserved.</p>
         </div>
       </div>
 
       <div class="flex items-center gap-6 font-mono text-[11px] uppercase tracking-wider">
-        <a href="#hero" class="hover:text-gold transition-colors">Back To Top</a>
-        <a href="#heritage" class="hover:text-gold transition-colors">Harlem Genesis</a>
-        <a href="#fight-card" class="hover:text-gold transition-colors">Fight Card</a>
+        <a href="#fight-card" class="hover:text-gold transition-colors">Championship Fight</a>
+        <a href="#partners" class="hover:text-gold transition-colors">Partners</a>
+        <a href="#heritage" class="hover:text-gold transition-colors">Jack Johnson</a>
         <a href="#vip-access" class="hover:text-gold transition-colors">VIP Access</a>
       </div>
 
